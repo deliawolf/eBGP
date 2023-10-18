@@ -404,3 +404,10 @@ That's all the eBGP config as bridge between OSPF and EIGRP
 **future plan is to cretae summarization for both ospf and eigrp so the routing table will not having to much routing path
 
 
+#### Manipulate weight
+
+in BGP locally we can manipulate path using weight but it is only on Cisco devices.
+```
+R1(config)#router bgp 1
+R1(config-router)#neighbor 192.168.13.3 weight 500
+```
